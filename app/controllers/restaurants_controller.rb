@@ -1,5 +1,10 @@
 class RestaurantsController < ApplicationController
 
+
+  # if params[:category].present?
+  #   @restaurants = Restaurant.where(category: params[:category])
+  # else
+
   def index
     @restaurants = Restaurant.all
   end

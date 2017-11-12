@@ -1,5 +1,5 @@
 class Review < ApplicationRecord
-  ACCEPTED_RATING = [0,1,2,3,4,5]
+  ACCEPTED_RATING = 0..5
   belongs_to :restaurant
 
   validates :content, presence:true
